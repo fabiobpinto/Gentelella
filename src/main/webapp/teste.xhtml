@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Teste Primefaces</title>
+<!-- 	<h:outputStylesheet library="css" name="estilo.css" /> -->
+	<h:outputStylesheet library="css" name="bootstrap.css" />
+	<h:outputScript library="js" name="bootstrap.js" />
+	<h:outputScript library="js" name="bootstrap.min.js" />
+</h:head>
+<h:body>
+	<h:form>
+		<p:messages/>
+		<p:panelGrid columns="2">
+			<f:facet name="header">
+		Cadastro de Funcionarios
+	</f:facet>
+			<p:outputLabel value="Nome" for="nome" />
+			<p:inputText id="nome" required="true" value="#{funcionario.nome}" />
+
+			<p:outputLabel value="Emal" for="email"/>
+			<p:inputText id="email" required="true" requiredMessage="Email: Colocar o e-mail" value="#{funcionario.email}"/>
+			
+			<br/>
+			<p:outputLabel value="#{funcionario.nome}" />
+			<p:outputLabel value="#{funcionario.email}" />
+			<f:facet name="footer">
+				<p:commandButton value="Salvar" icon="ui-icon-disk" ajax="false" action="#{funcionario.cadastrar}" />
+			</f:facet>
+		</p:panelGrid>
+
+	</h:form>
+
+</h:body>
+</html>

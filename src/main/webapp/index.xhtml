@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:pe="http://primefaces.org/ui/extensions"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Teste</title>
+	<!-- Bootstrap core CSS -->
+
+	<link rel="stylesheet" type="text/css"
+		href="#{request.contextPath}/resources/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css"
+		href="#{request.contextPath}/resources/css/icheck/green.css" />
+	<link rel="stylesheet" type="text/css"
+		href="#{request.contextPath}/resources/css/custom.css" />
+	<link rel="stylesheet" type="text/css"
+		href="#{request.contextPath}/resources/css/animate.min.css" />
+	<link rel="stylesheet" type="text/css"
+		href="#{request.contextPath}/resources/fonts/css/font-awesome.css" />
+	<link rel="stylesheet" type="text/css"
+		href="#{request.contextPath}/resources/fonts/css/font-awesome.min.css" />
+
+
+</h:head>
+<h:body class="nav-md">
+	<div class="container body">
+
+
+		<div class="main_container">
+
+			<div class="col-md-3 left_col">
+				<div class="left_col scroll-view">
+
+					<div class="navbar nav_title" style="border: 0;">
+						<a href="index.html" class="site_title">
+						<span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
+							<span>DatacenterSJC</span></a>
+					</div>
+					<div class="clearfix"></div>
+
+					<!-- menu prile quick info -->
+					<div class="profile">
+						<div class="profile_pic">
+							<h:graphicImage library="images" name="img.jpg" class="img-circle profile_img"/>
+						</div>
+						<div class="profile_info">
+							<span>Welcome,</span>
+							<h2>Anthony Fernando</h2>
+						</div>
+					</div>
+					<!-- /menu prile quick info -->
+
+					<br />
+
+					<!-- sidebar menu -->
+					<div id="sidebar-menu"
+						class="main_menu_side hidden-print main_menu">
+
+						<div class="menu_section">
+							<h3>General</h3>
+							<ul class="nav side-menu">
+								<li><a><i class="fa fa-home"></i> Home <span
+										class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display: none">
+										<li><a href="index.html">Dashboard</a></li>
+									</ul></li>
+								<li><a><i class="fa fa-edit"></i> Atendimentos <span
+										class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display: none">
+										<li><a href="form.html">General Form</a></li>
+									</ul></li>
+								<li><a><i class="fa fa-desktop"></i> Chamados <span
+										class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display: none">
+										<li><a href="general_elements.html">General Elements</a></li>
+										<li><a href="general_elements.html">General Elements</a></li>
+										<li><a href="general_elements.html">General Elements</a></li>
+									</ul></li>
+								<li><a><i class="fa fa-newspaper-o"></i> Relatórios <span
+										class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display: none">
+										<li><a href="general_elements.html">General Elements</a></li>
+										<li><a href="general_elements.html">General Elements</a></li>
+										<li><a href="general_elements.html">General Elements</a></li>
+									</ul></li>
+									<li><a><i class="fa fa-pie-chart"></i> Gráficos <span
+										class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display: none">
+										<li><a href="general_elements.html">General Elements</a></li>
+										<li><a href="general_elements.html">General Elements</a></li>
+										<li><a href="general_elements.html">General Elements</a></li>
+									</ul></li>
+							</ul>
+						</div>
+					</div>
+					<!-- /sidebar menu -->
+
+					<!-- /menu footer buttons -->
+					<div class="sidebar-footer hidden-small">
+						<a data-toggle="tooltip" data-placement="top" title="Settings">
+							<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+						</a> <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+							<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+						</a> <a data-toggle="tooltip" data-placement="top" title="Lock"> <span
+							class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+						</a> <a data-toggle="tooltip" data-placement="top" title="Logout">
+							<span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+						</a>
+					</div>
+					<!-- /menu footer buttons -->
+				</div>
+			</div>
+
+			<!-- top navigation -->
+			<div class="top_nav">
+
+				<div class="nav_menu">
+					<nav class="" role="navigation">
+					<div class="nav toggle">
+						<a id="menu_toggle"><i class="fa fa-bars"></i></a>
+					</div>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li class=""><a href="javascript:;"
+							class="user-profile dropdown-toggle" data-toggle="dropdown"
+							aria-expanded="false"> 
+							<h:graphicImage library="images" name="img.jpg"/>John
+								Doe <span class=" fa fa-angle-down"></span>
+						</a>
+							<ul
+								class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
+								<li><a href="javascript:;"> Profile</a></li>
+								<li><a href="javascript:;"> <span
+										class="badge bg-red pull-right">50%</span> <span>Settings</span>
+								</a></li>
+								<li><a href="javascript:;">Help</a></li>
+								<li><a href="login.html"><i
+										class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+							</ul></li>
+
+						<li role="presentation" class="dropdown"><a
+							href="javascript:;" class="dropdown-toggle info-number"
+							data-toggle="dropdown" aria-expanded="false"> <i
+								class="fa fa-envelope-o"></i> <span class="badge bg-green">6</span>
+						</a>
+							<ul id="menu1"
+								class="dropdown-menu list-unstyled msg_list animated fadeInDown"
+								role="menu">
+								<li><a> <span class="image"> 
+								<h:graphicImage library="images" name="img.jpg" alt="Profile Image" />
+									</span> <span> <span>John Smith</span> <span class="time">3
+												mins ago</span>
+									</span> <span class="message"> Film festivals used to be
+											do-or-die moments for movie makers. They were where... </span>
+								</a></li>
+								<li><a> <span class="image">
+								<h:graphicImage library="images" name="img.jpg" alt="Profile Image" />
+									</span> <span> <span>John Smith</span> <span class="time">3
+												mins ago</span>
+									</span> <span class="message"> Film festivals used to be
+											do-or-die moments for movie makers. They were where... </span>
+								</a></li>
+								<li><a> <span class="image"> 
+								<h:graphicImage library="images" name="img.jpg" alt="Profile Image" />
+									</span> <span> <span>John Smith</span> <span class="time">3
+												mins ago</span>
+									</span> <span class="message"> Film festivals used to be
+											do-or-die moments for movie makers. They were where... </span>
+								</a></li>
+								<li>
+									<div class="text-center">
+										<a> <strong>See All Alerts</strong> <i
+											class="fa fa-angle-right"></i>
+										</a>
+									</div>
+								</li>
+							</ul></li>
+
+					</ul>
+					</nav>
+				</div>
+
+			</div>
+			<!-- /top navigation -->
+
+			<!-- page content -->
+			<div class="right_col" role="main">
+				<div class="">
+					<div class="page-title">
+						<div class="title_left">
+							<h3>Plain Page</h3>
+						</div>
+					</div>
+					<div class="clearfix">
+					
+					</div>
+
+					<div class="row">
+
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="x_panel" style="height: 600px;">
+								<div class="x_title">
+									<h2>Plain Page</h2>
+									<ul class="nav navbar-right panel_toolbox">
+										<li><a class="collapse-link"><i
+												class="fa fa-chevron-up"></i></a></li>
+										<li class="dropdown"><a href="#" class="dropdown-toggle"
+											data-toggle="dropdown" role="button" aria-expanded="false"><i
+												class="fa fa-wrench"></i></a>
+											<ul class="dropdown-menu" role="menu">
+												<li><a href="#">Settings 1</a></li>
+												<li><a href="#">Settings 2</a></li>
+											</ul></li>
+										<li><a class="close-link"><i class="fa fa-close"></i></a>
+										</li>
+									</ul>
+									<div class="clearfix"></div>
+								</div>
+								<p:button value="Teste"/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- footer content -->
+				<footer>
+				<div class="">
+					<p class="pull-right">
+						Gentelella Alela! a Bootstrap 3 template by <a>Kimlabs</a>. | <span
+							class="lead"> <i class="fa fa-paw"></i> Gentelella Alela!
+						</span>
+					</p>
+				</div>
+				<div class="clearfix"></div>
+				</footer>
+				<!-- /footer content -->
+
+			</div>
+			<!-- /page content -->
+		</div>
+
+	</div>
+
+	<div id="custom_notifications" class="custom-notifications dsp_none">
+		<ul class="list-unstyled notifications clearfix"
+			data-tabbed_notifications="notif-group">
+		</ul>
+		<div class="clearfix"></div>
+		<div id="notif-group" class="tabbed_notifications"></div>
+	</div>
+
+	<script type="text/javascript" src="#{request.contextPath}/resources/js/bootstrap.min.js"></script> <!-- Correio -->
+	<script type="text/javascript" src="#{request.contextPath}/resources/js/custom.js"></script> <!-- Menu -->
+	
+
+
+
+</h:body>
+
+</html>
